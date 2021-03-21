@@ -1,7 +1,6 @@
 ErrorDocument 404 404.html
 
 RewriteEngine On
-RewriteRule .* index.html
-RewriteRule .* 404.html
-RewriteRule .* concours.html
-RewriteRule .* presentation.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
