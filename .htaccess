@@ -2,4 +2,4 @@ ErrorDocument 404 404.html
 
 RewriteEngine On
 
-RewriteRule ^index$ index.html
+RewriteRule ^(.*)-([0-9]+)\.html ./detail.php?id=$2 [L]
