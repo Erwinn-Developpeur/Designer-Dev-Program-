@@ -170,6 +170,10 @@ header nav ul li a {
 /* STEPS */
 
 
+.steps {
+    text-align: center;
+}
+
 .title-steps {
     text-align: center;
     margin-left: 50px;
