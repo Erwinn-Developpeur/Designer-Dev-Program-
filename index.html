@@ -19,13 +19,10 @@
     <!-- ICON -->
     <link rel="icon" type="image/png" href="Images/logo-ddp.png" />
 
-    <!-- JS -->
-    <script src="main.js"></script> 
 
 
-
-
-
+   <meta property="og: description" content="Designer Dev Program est un serveur discord de développement"> 
+   <meta property="og: image" content="Images/logo-ddp">
 
 </head>
 <body>
@@ -37,13 +34,8 @@
 
 
            <div class="header">
-               <div>
-                      <a href="index.html"><h1>Designer Dev Program <span class="point">.</span></h1></a>
-                   
-                   <div class="ligne-h1"></div>
-                   
-               </div>
-               
+                <h1>Designer Dev Program <span class="point">.</span></h1>
+
             <nav>
                 <ul>
                     <li><a href="#">Accueil</a> <li>
@@ -56,6 +48,11 @@
            </div>
     </header>
 
+
+    <span span id="number"> 
+        Bienvenue sur le site 
+        
+    </span>
 
 
     <section>
@@ -151,5 +148,14 @@
 </html>
 
 
+<script>
+    var reponse = prompt("   Entrez votre prénom", "Anonyme");
+if (reponse == null) {
+  alert("Vous avez cliqué sur Annuler");
+} else {
+  alert(" Bienvenue sur le site " + reponse + " ! ");
+  document.getElementById("number").innerHTML = reponse
+}
 
+</script>
 
