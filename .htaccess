@@ -3,4 +3,4 @@ ErrorDocument 503 https://designer-dev-program.netlify.app/503.html
 
 RewriteEngine On
 
-RewriteRule index.html index
+RewriteRule index index.html
