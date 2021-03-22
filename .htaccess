@@ -1,5 +1,5 @@
-ErrorDocument 404 404.html
-ErrorDocument 503 503.html
+ErrorDocument 404 https://designer-dev-program.netlify.app/404.html
+ErrorDocument 503 https://designer-dev-program.netlify.app/503.html
 
 RewriteEngine On
 
