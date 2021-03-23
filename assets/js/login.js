@@ -7,7 +7,7 @@
 
    // Displaying the value
    if (inputPrenom === "" || inputMDP === "" || inputPrenom === "" && inputMDP === "") {
-     alert("L'identifiant ou le mot de passe sont invalident");
+     alert("L'identifiant ou le mot de passe sont invalides.");
    }
    else {
      if (inputComplete === `DDPStaff_Staff`) {
