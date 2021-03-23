@@ -12,6 +12,9 @@ function getInputValue(){
     else if (inputPrenom.length < 3) {
       alert("L'identifiant et/ou le mot de passe ne peuvent pas faire moins de 3 caractères");
     }
+    else if (!isNaN(inputPrenom)) {
+    	alert("L'identifiant ne peut pas contenir que des chiffres");
+    }
     else {
       if (inputComplete === `DDPStaff_Staff`) {
         alert("Bonjour à toi le staff.");
@@ -23,4 +26,3 @@ function getInputValue(){
       }
     }
   }
-  
