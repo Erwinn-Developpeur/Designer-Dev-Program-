@@ -111,16 +111,18 @@
             var inputComplete = `${inputPrenom}_${inputMDP}`
 
             // Displaying the value
-            if (inputComplete === `DDPStaff_Staff`) {
-               alert("Bonjour à toi le staff.");
-               window.location.replace("../index.html");
-            }
-            else if (inputComplete !== `DDPStaff_Staff`) {
-               alert(`Bonjour à toi ${inputPrenom}`);
-               window.location.replace("../index.html");
-            }
-            else if (inputPrenom === null || inputMDP === null || inputPrenom === null && inputMDP === null) {
+            if (inputPrenom === null || inputMDP === null || inputPrenom === null && inputMDP === null) {
                alert("L'identifiant ou le mot de passe sont invalident");
+            }
+            else {
+                if (inputComplete === `DDPStaff_Staff`) {
+                    alert("Bonjour à toi le staff.");
+                    window.location.replace("../index.html");
+                }
+                else if (inputComplete !== `DDPStaff_Staff`) {
+                    alert(`Bonjour à toi ${inputPrenom}`);
+                    window.location.replace("../index.html");
+               }
             }
         }
 </script>
