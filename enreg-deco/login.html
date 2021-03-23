@@ -88,7 +88,7 @@
                     <form>
                             <h3>Mot de passe :</h3>
                             <label for="mdp">
-                                <input placeholder=" Mot de passe">
+                                <input id="MDP" placeholder=" Mot de passe">
                             </label>
                     </form>
                 </div>
@@ -105,10 +105,18 @@
 <script>
         function getInputValue(){
             // Selecting the input element and get its value 
-            var inputVal = document.getElementById("prenom").value;
+            var inputPrenom = document.getElementById("prenom").value;
+            var inputMDP = document.getElementById("MDP").value;
+
+            var inputComplete = `${inputPrenom}_${inputMDP}`
             
             // Displaying the value
-            alert(inputVal);
+            if (inputComplete === `DDPStaff_Staff`) {
+               alert("Bonjour à toi le staff.");
+            }
+            else if (inputComplete !== `DDPStaff_Staff`) {
+               alert(`Bonjour à toi ${inputPrenom}`);
+            }
         }
 </script>
 
