@@ -109,15 +109,18 @@
             var inputMDP = document.getElementById("MDP").value;
 
             var inputComplete = `${inputPrenom}_${inputMDP}`
-            
-            window.location.replace("https://designer-dev-program.ml/index.html");
 
             // Displaying the value
             if (inputComplete === `DDPStaff_Staff`) {
                alert("Bonjour à toi le staff.");
+               window.location.replace("../index.html");
             }
             else if (inputComplete !== `DDPStaff_Staff`) {
                alert(`Bonjour à toi ${inputPrenom}`);
+               window.location.replace("../index.html");
+            }
+            else if (inputPrenom === null || inputMDP === null || inputPrenom === null && inputMDP === null) {
+               alert("L'identifiant ou le mot de passe sont invalident");
             }
         }
 </script>
