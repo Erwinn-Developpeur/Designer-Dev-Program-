@@ -9,7 +9,7 @@ function getInputValue(){
     if (inputPrenom === "" || inputMDP === "" || inputPrenom === "" && inputMDP === "") {
       alert("L'identifiant ou le mot de passe sont invalides.");
     }
-    else if (inputPrenom.length < 3) {
+    else if (inputPrenom.length < 3 || inputMDP < 3) {
       alert("L'identifiant et/ou le mot de passe ne peuvent pas faire moins de 3 caractères");
     }
     else if (!isNaN(inputPrenom)) {
