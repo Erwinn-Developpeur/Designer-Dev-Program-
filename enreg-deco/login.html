@@ -75,8 +75,8 @@
                       <form>
                           <h3>Identifiant</h3>
                               <label for="identifiant">
-                              <input id="identifiant" placeholder=" Identifiant">
-                                  <span title="Veuillez entrer uniquement des lettres">s</span>
+                              <input type=text pattern="^[a-zA-Z]" id="identifiant" placeholder=" Identifiant">
+                                  <span title="Veuillez entrer uniquement des lettres"></span>
                               </label>
                       </form>
                   </div>
@@ -145,6 +145,16 @@
     margin-bottom: 10px;
     font-size: 30px;
 }
+    
+    
+.prenom ~ span:after {
+    color: red;
+    }
+    
+    
+    .prenom {
+    
+    }
 
 
 
