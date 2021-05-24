@@ -1,2 +1,11 @@
-ErrorDocument 404 https://designer-dev-program.ml/404.html
-ErrorDocument 503 https://designer-dev-program.ml/503.html
+ErrorDocument 404 https://designer-dev-program.ml/404/
+ErrorDocument 503 https://designer-dev-program.ml/503/
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /404.html [L]
+
+RewriteCond %{REQUEST_URI} ^/503/$
+RewriteRule ^(.*)$ /503.html [L]
